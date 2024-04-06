@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drop-shadow {
+	filter: drop-shadow(0px 0px 5px #03a062);
+}
+
+.text-shadow {
+	text-shadow: 0 0 10px #03a062;
+}
+
+
+@supports not (color: oklch(0 0 0)) {
+	:root {
+		--fallback-p: #ffa600;
+		--fallback-pc: #23313c;
+		--fallback-s: #eb9c41;
+		--fallback-sc: #23313c;
+		--fallback-a: #ffbf45;
+		--fallback-ac: #000000;
+		--fallback-n: #ffffff;
+		--fallback-nc: #23313c;
+		--fallback-b1: #90a0ac;
+		--fallback-b2: #5b7388;
+		--fallback-b3: #182a3c;
+		--fallback-bc: #ffffff;
+		--fallback-in: #0ea5e9;
+		--fallback-inc: #000000;
+		--fallback-su: #63eb81;
+		--fallback-suc: #000000;
+		--fallback-wa: #ffbf45;
+		--fallback-wac: #000000;
+		--fallback-er: #fd4337;
+		--fallback-erc: #000000;
+	}
+}
+
+
+@font-face {
+	font-family: 'm6x';
+	src: url('/m6x11plus.ttf') format('truetype');
+}
+
+
+@layer base {
+	html {
+		background-color: black;
+		font-family: 'm6x', system-ui, sans-serif;
+		font-size: 100%;
+	}
+}
